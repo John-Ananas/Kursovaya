@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Генератор резюме</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+    <div class="app">
+        <div class="form-panel">
+            <h1>📄 Генератор резюме</h1>
+            
+            <div class="steps">
+                <span class="step" data-step="0">1. Личные данные</span>
+                <span class="step" data-step="1">2. Опыт</span>
+                <span class="step" data-step="2">3. Образование</span>
+                <span class="step" data-step="3">4. Навыки</span>
+                <span class="step" data-step="4">5. Дополнительно</span>
+            </div>
+            
+            <div id="form-area"></div>
+            
+            <div class="buttons">
+                <button id="prevBtn" disabled>◀ Назад</button>
+                <button id="nextBtn">Далее ▶</button>
+                <button id="pdfBtn" style="background:green;">📥 PDF</button>
+            </div>
+            
+            <div class="tips">
+                <h3>💡 Советы</h3>
+                <ul id="tipsList"></ul>
+            </div>
+        </div>
+        
+        <div class="preview-panel">
+            <h2>Превью</h2>
+            <div id="preview" class="preview-card"></div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

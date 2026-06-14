@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, sans-serif;
+}
+
+.app {
+    display: flex;
+    gap: 30px;
+    max-width: 1300px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+.form-panel, .preview-panel {
+    flex: 1;
+    background: white;
+    border-radius: 20px;
+    padding: 25px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.steps {
+    display: flex;
+    gap: 10px;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+
+.step {
+    padding: 8px 16px;
+    background: #e9ecef;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.step.active {
+    background: #4361ee;
+    color: white;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+button {
+    padding: 10px 20px;
+    background: #4361ee;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:disabled {
+    opacity: 0.5;
+}
+
+.preview-card {
+    border: 1px solid #ddd;
+    border-radius: 16px;
+    padding: 20px;
+    min-height: 400px;
+    transition: all 0.3s;
+}
+
+.tips {
+    margin-top: 20px;
+    padding: 15px;
+    background: #fff3cd;
+    border-radius: 8px;
+}
+
+.tips ul {
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+
+.preview-card.it {
+    border-left: 8px solid white;
+    background: #1a1a2e;
+    color: white;
+}
+.preview-card.marketing {
+    border-left: 8px solid #1e3a8a;
+    background: #eff6ff;
+}
+.preview-card.accountant {
+    border-left: 8px solid #dc2626;
+    background: #fef2f2;
+}
+.preview-card.engineer {
+    border-left: 8px solid #16a34a;
+    background: #f0fdf4;
+}
+.preview-card.manager {
+    border-left: 8px solid #8b5cf6;
+    background: #f5f3ff;
+}
